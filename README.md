@@ -63,10 +63,10 @@ The **SMS Spam Collection Dataset** contains labeled SMS messages categorized as
 ## Example Results
 
 ### Metrics
-- **Accuracy**: ~95%
-- **Precision**: 0.96
-- **Recall**: 0.93
-- **F1-Score**: 0.94
+- **Accuracy**: ~97%
+- **Precision**: 0.89
+- **Recall**: 0.94
+- **F1-Score**: 0.91
 
 ### Confusion Matrix
 A sample confusion matrix visualizing true vs. predicted classifications:
@@ -74,21 +74,17 @@ A sample confusion matrix visualizing true vs. predicted classifications:
 ```
           Predicted
           Ham   Spam
-True Ham   950    20
-True Spam   30    300
+True Ham   1423    25
+True Spam   12    212
 ```
 
 ## Project Structure
 ```
 .
-├── data
+├── sms+spam+collection
 │   └── SMSSpamCollection  # Dataset file
-├── spam_filter.py          # Main implementation script
-├── requirements.txt        # Dependencies
+├── spam_filter.ipynb         # Main implementation script
 ├── README.md               # Project documentation
-└── results
-    ├── metrics.txt         # Evaluation metrics
-    └── confusion_matrix.png
 ```
 
 ## Key Functions in the Code
